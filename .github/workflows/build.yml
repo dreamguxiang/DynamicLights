@@ -6,6 +6,10 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    strategy:
+      matrix:
+        target_type:
+          - client
 
     steps:
       - uses: actions/checkout@v6
