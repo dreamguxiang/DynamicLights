@@ -61,8 +61,8 @@ jobs:
     strategy:
       matrix:
         target_type:
-          - server
           - client
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
